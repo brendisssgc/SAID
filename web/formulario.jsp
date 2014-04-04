@@ -11,20 +11,20 @@
         <title>Registro</title>
 
         <script type="text/javascript">
-            function compradiobut(checkerbox,div){
-                if(checkerbox.checked){
-                    document.getElementById(div).style.display="block"
-                }
-                else{
-                    document.getElementById(div).style.display="block"
-                }
+            function oculta(id){
+        	var elDiv=document.getElementById(id);
+        	elDiv.style.display='none';
+            }
+            function muestra(id){
+            	var elDiv=document.getElementById(id);
+        	elDiv.style.display='block';
             }
         </script>
     </head>
 	
     <body>
-        <input name="selec" id="selec" value="1" type="radio" onclick="compradiobut(this,'DivAlumno');" /> Alumno
-        <input name="selec" id="selec" value="2" type="radio" onclick="compradiobut(this,'DivProfesor');" /> Profesor
+        <input name="selec" id="selec" value="1" type="radio" onclick="muestra('DivAlumno'); oculta('DivProfesor');" /> Alumno
+        <input name="selec" id="selec" value="2" type="radio" onclick="muestra('DivProfesor'); oculta('DivAlumno');" /> Profesor
 
         <div id="DivAlumno" style="display:none">
             <form action="Registrado.jsp"  method="Post" id="frml">
