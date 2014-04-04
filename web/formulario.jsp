@@ -37,7 +37,7 @@
                         <td><span class="txt"><img id="a1" class="ima" src="images/tache.jpg"/></span>
                         </td>
                     </tr>
-
+<!--hola mundo-->
                     <tr>
                         <td width="40%"><span class="txt">Nombre(s): </span></td>
                         <td width="34%"><span style="font-family:'Comic Sans MS';font-weight:bold;-moz-text-fill-color: black;-moz-text-stroke-color: red;-moz-text-stroke-width: 0.75px;">
