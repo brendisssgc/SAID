@@ -1,0 +1,121 @@
+<html xml:lang="en" lang="en">
+	<head>
+		<title> Teoria </title>
+		<script type="text/javascript" src="js/jquery-1.5.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery.gallerax-0.2.js"></script>
+		<script type="text/javascript" src="js/jquery.slidertron-0.1.js"></script>
+		<script type="text/javascript" src="js/filter.js"></script>		
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+	
+	<body>
+		<div id="wrapper">
+			<div id="logo">
+				<h1> <b> <span> Física I </span> </b></h1>
+			</div>
+			<div id="categories">
+				<ul>
+					<li><a href="category1.html" id="category1" class="current"> Primer parcial </a></li>
+					<li><a href="index1.html" > Segundo parcial </a></li>
+					<li><a href="index3.html" > Tercer Parcial </a></li>
+				</ul>
+			</div>			
+
+			<div id="gallery">
+				<div id="output">
+						<img src="images/1.jpg" alt="" />
+				</div>
+					
+				<div id="slider">
+					<a href="#" class="previous"><img src="images/up.png" alt="up" width="38" height="21" /></a>
+					<div class="viewer">
+						<div class="reel">
+							<div class="slide"> 		
+								<ul class="thumbnails">
+									<li><img src="images/1_thumb.jpg" title="Cantidades Físicas; Aqui aprenderas acerca de las medidas utilizadas en la f&iacute;sica." alt="" width="100" height="75" /></li>
+									<li><img src="images/2.jpg" title="Cantidades físicas;" alt="" width="100" height="75" /></li>
+									<li><img src="images/si.png" title="Sistema Internacional; Este es el sistema estandar que se ha acordado para las unidades de medida." alt="" width="100" height="75" /></li>
+									<li><img src="images/med.png" title="Mediciones ;." alt="" width="100" height="75" /></li>
+								</ul>
+							</div>	
+										
+							<div class="slide"> 												
+								<ul class="thumbnails">
+									<li><img src="images/4.jpg" title="Patron;." alt="" width="100" height="75" /></li>
+								</ul>
+							</div>						
+						</div>
+					</div>
+				<a href="#" class="next"><img src="images/down.png" alt="down" width="38" height="21" /></a>
+				</div>					
+					
+				<div id="captions">					
+					<div id="nav">
+						<ul>
+							<li><a href="#" class="navFirst"> </a></li>
+							<li><a href="#" class="navPrevious">[ &lt; ]</a></li>
+							<li><a href="#" class="navNext">[ &gt; ]</a></li>
+							<li><a href="#" class="navLast">[ &gt;&gt; ]</a></li>
+							<li><a href="#" class="navStopAdvance">[ Stop ]</a></li>
+							<li><a href="#" class="navPlayAdvance active">[ Play ]</a></li>
+						</ul>
+					</div>	
+					<span class="line">Monument Valley</span>
+					<br class="clear" />
+					<span class="line2">A scenic shot of Monument Valley in Utah.</span>
+				</div>			
+					
+					
+					<script type="text/javascript">
+						$('#slider').slidertron({
+							viewerSelector:			'.viewer',
+							reelSelector:			'.viewer .reel',
+							slidesSelector:			'.viewer .reel .slide',
+							slidernavPreviousSelector:	'.previous',
+							slidernavNextSelector:		'.next',
+							slidernavFirstSelector:		'.first',
+							slidernavLastSelector:		'last',
+							slideradvanceDelay:			'16000',	
+							slideradvanceResume:			'16000'
+						});													
+					</script>
+					
+					<script type="text/javascript">
+						$.gallerax({
+							outputSelector: 		'#output img',				// Output selector
+							thumbnailsSelector:		'.thumbnails li img',		// Thumbnails selector
+							captionSelector:		'#captions .line',			// Caption selector
+							captionLines:			2,							// Caption lines (3 lines)
+							fade: 					'fast',						// Transition speed (fast)
+							navNextSelector:		'#nav a.navNext',			// 'Next' selector
+							navPreviousSelector:	'#nav a.navPrevious',		// 'Previous' selector
+							navFirstSelector:		'#nav a.navFirst',			// 'First' selector
+							navLastSelector:		'#nav a.navLast',			// 'Last' selector
+							navStopAdvanceSelector:	'#nav a.navStopAdvance',	// 'Stop Advance' selector
+							navPlayAdvanceSelector:	'#nav a.navPlayAdvance',	// 'Play Advance' selector
+							advanceFade:			'slow',						// Advance transition speed (slow)
+							advanceDelay:			6000,						// Advance delay (4 seconds)
+							advanceResume:			12000,						// Advance resume (12 seconds)
+							thumbnailsFunction: 	function(s) {				// Thumbnails function
+							
+								return s.replace(/_thumb\.jpg$/, '.jpg');
+							}
+						});
+					</script> 	
+			</div>
+			<div>
+				<p>
+					&copy; 2013 Cronos Clock, All Rights Reserved. 
+				</p>
+			</div>	
+			<form method="post" action="../index.html" name="1">
+			<div>
+				<p align="right">
+				<input type="image" name="imageField" src="images/boin.jpg" height="10%" width="8%"/>
+				</p>
+			</div>
+			
+				
+		</div>	
+	</body>
+</html>

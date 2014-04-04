@@ -1,0 +1,43 @@
+	body {
+		margin: 0;
+		padding: 0;
+		font-family: Century Gothic;
+		background-color: #000;
+		color: #75D1FF;
+		background: url(1.jpg);
+		background-attachment:fixed;
+	}
+	
+	h1{
+		text-align: center;
+		letter-spacing:2px;
+	}
+	
+	hr{
+		
+	}
+
+	div.ellis a  {
+		color: #66FFFF;
+		outline: none;
+		line-height:150%	
+	}
+	
+	#lis{
+	
+	width:225px;
+	padding:30px;
+	border: 1px solid #aae5f5;
+	border-style:ridge;
+	border-radius: 6px;
+	margin:0px;
+    background-color: black;
+	opacity:0.9;
+    box-shadow: 0px 5px 15px #9900CC inset;
+	box-shadow: 0 0 0 10px #A52AEA ridge;
+	}
+
+	
+	
+	
+	

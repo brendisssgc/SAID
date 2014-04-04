@@ -1,0 +1,50 @@
+
+body {
+	font-family: Century Gothic;
+	background-color: #B6ECEC;
+	color: #FF70DB;
+	text-align: center;
+}
+
+div.Titles {
+	position: absolute;
+	left: 10%;
+	width: 80%;
+	text-align: center;
+	top: 5px;
+}
+
+td.NavBar{
+	background-color: #C670E2;
+	text-align: center;
+}
+
+div.CardStyle1{
+	position: fixed;
+	top: 50px;
+	right: 50px;
+	font-family: Comic Sans MS;
+	padding: 5px;
+	border-style: inset;
+	border-width: 3px;
+	border-color: #FF33CC;
+	color: #7A00A3;
+	background-color: #FFB6DA;
+	overflow: visible;
+	text-align: center;
+}
+
+div.Feedback {
+	background-color: #D8A0E6;
+	left: 1px;
+	top: 1px;
+	z-index: 1;
+	border-style: inset;
+	border-width: 6px;
+	border-color: #A2A2F2;
+	text-align: center;
+	font-family: Tekton Pro Ext;
+	color: #4700B2;
+	padding: 5px;
+	position: absolute;
+}
