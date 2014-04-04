@@ -45,6 +45,7 @@
             </form>
             
             ¿A&uacute;n no tienes tu cuenta? <a href="formulario.jsp">Registrate</a>
+            ¿Olvidaste tu contrae&ntilde;a? <a href="reposCodId.jsp">Registrate</a>
         </div>
         
         <div id="copyright" class="container">
